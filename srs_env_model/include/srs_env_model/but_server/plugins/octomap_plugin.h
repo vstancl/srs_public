@@ -76,7 +76,7 @@ public:
 	virtual void init(ros::NodeHandle & node_handle);
 
 	//! Reset octomap
-	void reset(bool clearLoaded);
+	void reset(bool clearLoaded = true);
 
 	//! Get current octomap size
 	unsigned getSize() { return m_data->octree.size(); }
